@@ -31,7 +31,8 @@ function Home() {
         <div className="container">
           <h1 className="logo-font">conduit</h1>
           <p>Write in your own way.</p>
-          <p>By IGDTUites For IGDTUites</p>
+          <p>By IGDTUites  for  IGDTUites</p>
+          <p>IGDTUW</p>
         </div>
       </div>
       <div className="container page">
