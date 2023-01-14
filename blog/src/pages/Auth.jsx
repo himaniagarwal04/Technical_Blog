@@ -4,6 +4,7 @@ import { Formik, Form, Field } from 'formik'
 import axios from 'axios'
 import { FormErrors } from '../components'
 import { useAuth } from '../hooks'
+import './auth.css'
 
 function Auth() {
   const navigate = useNavigate()
@@ -29,12 +30,12 @@ function Auth() {
   const loginInitialValues = { email: '', password: '' }
 
   return (
-    <div className="auth-page">
-      <div className="container page">
+    <div className="auth-page1">
+      <div className="container-page1">
         <div className="row">
           <div className="col-md-6 offset-md-3 col-xs-12">
             <h1 className="text-xs-center">Sign {isRegister ? 'up' : 'in'}</h1>
-            <p className="text-xs-center">
+            <p className="text-xs-center1">
               <Link to="/register">{isRegister ? 'Have' : 'Need'} an account?</Link>
             </p>
             <Formik
@@ -66,7 +67,7 @@ function Auth() {
                         placeholder="Password"
                       />
                     </fieldset>
-                    <button disabled={isSubmitting} type="submit" className="btn btn-lg btn-primary pull-xs-right">
+                    <button disabled={isSubmitting} type="submit" className="btn btn-lg btn-primary pull-xs-right1">
                       Sign {isRegister ? 'up' : 'in'}
                     </button>
                   </Form>
